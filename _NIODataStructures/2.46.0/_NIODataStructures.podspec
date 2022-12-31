@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-nio.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
 
-  spec.test_spec "#{spec.module_name}Tests" do |test|
+  spec.test_spec "#{spec.name}Tests" do |test|
     test.source_files = "Tests/NIODataStructuresTests/**/*.swift"
   end
 end

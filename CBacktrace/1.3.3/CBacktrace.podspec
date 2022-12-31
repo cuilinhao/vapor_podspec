@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.6"
 
   spec.source = { :git => "https://github.com/swift-server/swift-backtrace.git", :tag => "#{spec.version}" }
-  spec.source_files = "Sources/#{spec.module_name}/**/*.{h,c}"
-  spec.public_header_files = "Sources/#{spec.module_name}/include/*.h"
+  spec.source_files = "Sources/#{spec.name}/**/*.{h,c}"
+  spec.public_header_files = "Sources/#{spec.name}/include/*.h"
 end
