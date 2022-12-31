@@ -1,7 +1,9 @@
 # Podspecs
 
+`source "https://github.com/VaslD/Podspecs.git"`
+
 - [x] `pod "Algorithms"`
-- [ ] `pod "AsyncHTTPClient"`
+- [ ] `pod "AsyncHTTPClient"`
 - [x] `pod "Atomics"`
 - [x] `pod "Backtrace"` (`CBacktrace`)
 - [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
@@ -12,6 +14,6 @@
 - [x] `pod "NIOHTTP2"` (`NIOHPACK`)
 - [x] `pod "NIOSSL"` (`CNIOBoringSSL`)
 - [x] `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
-- [ ] `pod "NIOTransportServices"`
+- [x] `pod "NIOTransportServices"`
 - [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
 
