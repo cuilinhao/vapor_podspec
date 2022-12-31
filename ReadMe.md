@@ -3,7 +3,7 @@
 `source "https://github.com/VaslD/Podspecs.git"`
 
 - [x] `pod "Algorithms"`
-- [ ] `pod "AsyncHTTPClient"`
+- [x] `pod "AsyncHTTPClient"` (`CAsyncHTTPClient`)
 - [x] `pod "Atomics"`
 - [x] `pod "Backtrace"` (`CBacktrace`)
 - [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
@@ -17,3 +17,4 @@
 - [x] `pod "NIOTransportServices"`
 - [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
 
+Test cases are included as test specs.
