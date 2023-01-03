@@ -36,10 +36,11 @@ Test cases are included as test specs.
 ## Vapor
 
 - [x] `pod "AsyncKit"`
-- [x] `pod "ConsoleKit"`
+- [x] `pod "ConsoleKit"`
 - [x] `pod "JWTKit"` (`CJWTKitBoringSSL`)
 - [x] `pod "MultipartKit"`
 - [x] `pod "RoutingKit"`
+- [x] `pod "Vapor"` (`CVaporBcrypt`, `CVaporURLParser`)
 - [x] `pod "WebSocketKit"`
 
 ## Kitura
