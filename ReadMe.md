@@ -18,5 +18,6 @@
 - [x] `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
 - [x] `pod "NIOTransportServices"`
 - [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
+- [x] `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
 
 Test cases are included as test specs.
