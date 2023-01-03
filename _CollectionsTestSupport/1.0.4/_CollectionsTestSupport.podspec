@@ -14,6 +14,9 @@ Pod::Spec.new do |spec|
 
   spec.source = { :git => "https://github.com/apple/swift-collections.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
+  spec.pod_target_xcconfig = {
+    "ENABLE_TESTING_SEARCH_PATHS" => "YES",
+  }
 
   spec.frameworks = "XCTest"
 
