@@ -19,5 +19,6 @@
 - [x] `pod "NIOTransportServices"`
 - [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
 - [x] `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
+- [x] `pod "System"`, `import SystemPackage`
 
 Test cases are included as test specs.
