@@ -9,6 +9,7 @@
 - [x] `pod "Backtrace"` (`CBacktrace`)
 - [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
 - [x] `pod "Crypto"` (`CCryptoBoringSSL`)
+- [x] `pod "IsPower"`, `import SE0288_IsPower`
 - [x] `pod "Logging"`
 - [x] `pod "Markdown"` (`CMarkGFM`, `CMarkGFMExtensions`)
 - [x] `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
