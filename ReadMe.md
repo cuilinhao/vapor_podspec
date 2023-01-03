@@ -11,7 +11,7 @@
 - [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
 - [x] `pod "Crypto"` (`CCryptoBoringSSL`)
 - [x] `pod "IsPower"`, `import SE0288_IsPower`
-- [x] `pod "JWTKit"` (`CJWTKitBoringSSL`)
+- [x] `pod "JWTKit"` (`CJWTKitBoringSSL`)
 - [x] `pod "Logging"`
 - [x] `pod "Markdown"` (`CMarkGFM`, `CMarkGFMExtensions`)
 - [x] `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
@@ -27,6 +27,7 @@
 - [x] `pod "StructuredFieldValues"` (`RawStructuredFieldValues`)
 - [x] `pod "SwiftProtobuf"`
 - [x] `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
+- [x] `pod "SymbolKit"`
 - [x] `pod "System"`, `import SystemPackage`
 
 Test cases are included as test specs.
