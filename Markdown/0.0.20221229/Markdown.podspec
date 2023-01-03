@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
     sed -i -e 's/Bundle\\.module/Bundle\\(for: MarkupRewriterTests\\.self\\)/' 'Tests/#{spec.name}Tests/Visitors/MarkupRewriterTests.swift'
     BASH
 
-  spec.dependency "CAtomic", "#{spec.version}"
+  spec.dependency "CMarkdownAtomic", "#{spec.version}"
 
   spec.dependency "CMarkGFM"
   spec.dependency "CMarkGFMExtensions"
