@@ -14,6 +14,7 @@
 - [x] `pod "Logging"`
 - [x] `pod "Markdown"` (`CMarkGFM`, `CMarkGFMExtensions`)
 - [x] `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
+- [x] `pod "MQTTNIO"`
 - [x] `pod "NIO"` (`NIOCore`, `NIOEmbedded`, `NIOPOSIX`, `NIOHTTP1`, `NIOTLS`, `NIOWebSocket`)
 - [x] `pod "NIOHTTP2"` (`NIOHPACK`)
 - [x] `pod "NIOSSH"`
