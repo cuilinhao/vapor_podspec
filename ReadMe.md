@@ -18,6 +18,7 @@
 - [x] `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
 - [x] `pod "NIOTransportServices"`
 - [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
+- [x] `pod "SwiftProtobuf"`
 - [x] `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
 - [x] `pod "System"`, `import SystemPackage`
 
