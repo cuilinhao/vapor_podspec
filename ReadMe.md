@@ -36,7 +36,8 @@ Test cases are included as test specs.
 ## Vapor
 
 - [x] `pod "JWTKit"` (`CJWTKitBoringSSL`)
-- [x] `pod "WebSocketKit"`
+- [x] `pod "RoutingKit"`
+- [x] `pod "WebSocketKit"`
 
 ## Kitura
 
