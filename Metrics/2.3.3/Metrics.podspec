@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-metrics.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
 
-  spec.dependency "SwiftCoreMetrics", "#{spec.version}"
+  spec.dependency "CoreMetrics", "#{spec.version}"
 
   spec.test_spec "#{spec.name}Tests" do |test|
     test.source_files = "Tests/#{spec.name}Tests/**/*.swift"
