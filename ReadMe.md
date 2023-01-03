@@ -14,6 +14,7 @@
 - [x] `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
 - [x] `pod "NIO"` (`NIOCore`, `NIOEmbedded`, `NIOPOSIX`, `NIOHTTP1`, `NIOTLS`, `NIOWebSocket`)
 - [x] `pod "NIOHTTP2"` (`NIOHPACK`)
+- [x] `pod "NIOSSH"`
 - [x] `pod "NIOSSL"` (`CNIOBoringSSL`)
 - [x] `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
 - [x] `pod "NIOTransportServices"`
