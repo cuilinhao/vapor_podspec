@@ -3,7 +3,8 @@
 `source "https://github.com/VaslD/Podspecs.git"`
 
 - [x] `pod "Algorithms"`
-- [x] `pod "AsyncHTTPClient"` (`CAsyncHTTPClient`)
+- [x] `pod "ArgumentParser"`
+- [x] `pod "AsyncHTTPClient"` (`CAsyncHTTPClient`)
 - [x] `pod "Atomics"`
 - [x] `pod "Backtrace"` (`CBacktrace`)
 - [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
