@@ -15,11 +15,19 @@ Pod::Spec.new do |spec|
 
   spec.source = { :git => "https://github.com/apple/swift-crypto.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
-  spec.pod_target_xcconfig = { "SWIFT_ACTIVE_COMPILATION_CONDITIONS" => "$(inherited) CRYPTO_IN_SWIFTPM CRYPTO_IN_SWIFTPM_FORCE_BUILD_API" }
+  spec.pod_target_xcconfig = { "SWIFT_ACTIVE_COMPILATION_CONDITIONS" => "$(inherited) CRYPTO_IN_SWIFTPM" }
 
-  spec.dependency "CCryptoBoringSSL", "#{spec.version}"
-  spec.dependency "CCryptoBoringSSLShims", "#{spec.version}"
-  spec.dependency "CryptoBoringWrapper", "#{spec.version}"
+  spec.default_subspecs = :none
+  spec.subspec "BoringSSL" do |subspec|
+    subspec.source_files = "Sources/#{spec.name}/**/*.swift"
+    subspec.pod_target_xcconfig = {
+      "SWIFT_ACTIVE_COMPILATION_CONDITIONS" => "CRYPTO_IN_SWIFTPM_FORCE_BUILD_API",
+    }
+
+    subspec.dependency "CCryptoBoringSSL", "#{spec.version}"
+    subspec.dependency "CCryptoBoringSSLShims", "#{spec.version}"
+    subspec.dependency "CryptoBoringWrapper", "#{spec.version}"
+  end
 
   spec.test_spec "#{spec.name}Tests" do |test|
     test.source_files = "Tests/#{spec.name}Tests/**/*.swift"
