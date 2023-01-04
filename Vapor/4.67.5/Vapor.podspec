@@ -14,6 +14,11 @@ Pod::Spec.new do |spec|
 
   spec.source = { :git => "https://github.com/vapor/vapor.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
+  spec.prepare_command = <<-BASH
+    sed -i -e 's/Bundle\\.module/Bundle\\(for: Self\\.self\\)/' 'Tests/VaporTests/ServerTests.swift'
+    mv Tests/VaporTests/Utilities/*.swift Tests/VaporTests/
+    mv Tests/VaporTests/Utilities/expired.* Tests/VaporTests/
+    BASH
 
   spec.dependency "CVaporBcrypt", "#{spec.version}"
   spec.dependency "CVaporURLParser", "#{spec.version}"
@@ -39,4 +44,25 @@ Pod::Spec.new do |spec|
   spec.dependency "RoutingKit", "~> 4.5"
   spec.dependency "WebSocketKit", "~> 2.0"
   spec.dependency "MultipartKit", "~> 4.2"
+
+  spec.test_spec "VaporTests" do |test|
+    test.source_files = "Tests/VaporTests/**/*.swift"
+    test.resources = [
+      "Tests/VaporTests/Utilities",
+      "Tests/VaporTests/expired.crt",
+      "Tests/VaporTests/expired.key",
+    ]
+
+    test.dependency "XCTVapor", "#{spec.version}"
+
+    test.dependency "NIOTestUtils", "~> 2.42"
+  end
+
+  spec.test_spec "AsyncTests" do |test|
+    test.source_files = "Tests/AsyncTests/**/*.swift"
+
+    test.dependency "XCTVapor", "#{spec.version}"
+
+    test.dependency "NIOTestUtils", "~> 2.42"
+  end
 end
