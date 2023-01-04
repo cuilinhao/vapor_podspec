@@ -7,8 +7,8 @@ Pod::Spec.new do |spec|
   spec.author = "Vapor"
   spec.license = { :type => "MIT", :file => "LICENSE" }
 
-  spec.ios.deployment_target = "10.0"
-  spec.osx.deployment_target = "10.10"
+  spec.ios.deployment_target = "13.0"
+  spec.osx.deployment_target = "10.15"
 
   spec.swift_versions = "5.4"
 
