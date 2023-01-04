@@ -24,4 +24,5 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     "OTHER_CFLAGS" => "$(inherited) -DWIN32_LEAN_AND_MEAN",
   }
+  spec.module_map = false
 end

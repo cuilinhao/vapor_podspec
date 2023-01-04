@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     "LIBRARY_SEARCH_PATHS" => "$(inherited) $(SDKROOT)/usr/lib/swift",
   }
+  spec.module_map = false
 
   spec.libraries = "swiftCore"
 end

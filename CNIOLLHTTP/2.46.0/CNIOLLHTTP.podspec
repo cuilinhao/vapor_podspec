@@ -18,4 +18,5 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     "OTHER_CFLAGS" => "-DLLHTTP_STRICT_MODE",
   }
+  spec.module_map = false
 end

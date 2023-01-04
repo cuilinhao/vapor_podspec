@@ -15,6 +15,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-nio-ssl.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.{h,c}"
   spec.public_header_files = "Sources/#{spec.name}/include/*.h"
+  spec.module_map = false
 
   spec.dependency "CNIOBoringSSL", "#{spec.version}"
 end

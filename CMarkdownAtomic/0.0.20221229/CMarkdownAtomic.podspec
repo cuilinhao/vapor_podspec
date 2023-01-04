@@ -17,4 +17,5 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-markdown.git", :tag => "swift-DEVELOPMENT-SNAPSHOT-2022-12-29-a" }
   spec.source_files = "Sources/#{spec.module_name}/**/*.{h,c}"
   spec.public_header_files = "Sources/#{spec.module_name}/include/*.h"
+  spec.module_map = false
 end

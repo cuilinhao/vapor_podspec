@@ -20,4 +20,5 @@ Pod::Spec.new do |spec|
     sed -i -e '58i\\\n#include <inttypes.h>\n' 'Sources/#{spec.name}/crypto/x509/t_x509.c'
     sed -i -e '62i\\\n#include <inttypes.h>\n' 'Sources/#{spec.name}/crypto/evp/print.c'
     BASH
+  spec.module_map = false
 end
