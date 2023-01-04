@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
 
   spec.dependency "CCryptoBoringSSL", "#{spec.version}"
   spec.dependency "CCryptoBoringSSLShims", "#{spec.version}"
-  spec.dependency "SwiftCrypto", "#{spec.version}"
-  spec.dependency "SwiftCryptoBoringWrapper", "#{spec.version}"
+  spec.dependency "Crypto", "#{spec.version}"
+  spec.dependency "CryptoBoringWrapper", "#{spec.version}"
 
   spec.test_spec "#{spec.name}Tests" do |test|
     test.source_files = "Tests/#{spec.name}Tests/**/*.swift"

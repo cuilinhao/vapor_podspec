@@ -17,5 +17,5 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-numerics.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/_TestSupport/**/*.swift"
 
-  spec.dependency "SwiftNumerics", "#{spec.version}"
+  spec.dependency "Numerics", "#{spec.version}"
 end

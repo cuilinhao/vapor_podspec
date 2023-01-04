@@ -15,6 +15,6 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/apple/swift-nio.git", :tag => "#{spec.version}" }
   spec.source_files = "Sources/#{spec.name}/**/*.swift"
 
-  spec.dependency "SwiftNIO", "#{spec.version}"
-  spec.dependency "SwiftNIOCore", "#{spec.version}"
+  spec.dependency "NIO", "#{spec.version}"
+  spec.dependency "NIOCore", "#{spec.version}"
 end
