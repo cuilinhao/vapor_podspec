@@ -6,46 +6,72 @@ Test cases are included as test specs.
 
 ## Apple & Swift on Server
 
-- [x] `pod "Algorithms"`
-- [x] `pod "APNSwift"`
-- [x] `pod "ArgumentParser"`
-- [x] `pod "AsyncHTTPClient"` (`CAsyncHTTPClient`)
-- [x] `pod "Atomics"`
-- [x] `pod "Backtrace"` (`CBacktrace`)
-- [x] `pod "Collections"` (`DequeModule`, `OrderedCollections`)
-- [x] `pod "Crypto"` or `pod "Crypto/BoringSSL"` (`CCryptoBoringSSL`)
-- [x] `pod "IsPower"`, `import SE0288_IsPower`
-- [x] `pod "Logging"`
-- [x] `pod "Markdown"` (`CMarkGFM`, `CMarkGFMExtensions`)
-- [x] `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
-- [x] `pod "MQTTNIO"`
-- [x] `pod "NIO"` (`NIOCore`, `NIOEmbedded`, `NIOPOSIX`, `NIOHTTP1`, `NIOTLS`, `NIOWebSocket`)
-- [x] `pod "NIOHTTP2"` (`NIOHPACK`)
-- [x] `pod "NIOSSH"`
-- [x] `pod "NIOSSL"` (`CNIOBoringSSL`)
-- [x] `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
-- [x] `pod "NIOTransportServices"`
-- [x] `pod "Numerics"` (`RealModule`, `ComplexModule`)
-- [x] `pod "RangeSet"`, `import SE0270_RangeSet`
-- [x] `pod "StructuredFieldValues"` (`RawStructuredFieldValues`)
-- [x] `pod "SwiftProtobuf"`
-- [x] `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
-- [x] `pod "SymbolKit"`
-- [x] `pod "System"`, `import SystemPackage`
+- `pod "Algorithms"`
+- `pod "APNSwift"`
+- `pod "ArgumentParser"`
+- `pod "AsyncHTTPClient"` (`CAsyncHTTPClient`)
+- `pod "Atomics"`
+- `pod "Backtrace"` (`CBacktrace`)
+- `pod "Collections"` (`DequeModule`, `OrderedCollections`)
+- `pod "Crypto"` or `pod "Crypto/BoringSSL"` (`CCryptoBoringSSL`)
+- `pod "IsPower"`, `import SE0288_IsPower`
+- `pod "Logging"`
+- `pod "Markdown"` (`CMarkGFM`, `CMarkGFMExtensions`)
+- `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
+- `pod "MQTTNIO"`
+- `pod "NIO"` (`NIOCore`, `NIOEmbedded`, `NIOPOSIX`, `NIOHTTP1`, `NIOTLS`, `NIOWebSocket`)
+- `pod "NIOHTTP2"` (`NIOHPACK`)
+- `pod "NIOSSH"`
+- `pod "NIOSSL"` (`CNIOBoringSSL`)
+- `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
+- `pod "NIOTransportServices"`
+- `pod "Numerics"` (`RealModule`, `ComplexModule`)
+- `pod "RangeSet"`, `import SE0270_RangeSet`
+- `pod "StructuredFieldValues"` (`RawStructuredFieldValues`)
+- `pod "SwiftProtobuf"`
+- `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
+- `pod "SymbolKit"`
+- `pod "System"`, `import SystemPackage`
 
 ## Vapor
 
-- [x] `pod "AsyncKit"`
-- [x] `pod "ConsoleKit"`
-- [x] `pod "JWTKit"` (`CJWTKitBoringSSL`)
-- [x] `pod "MultipartKit"`
-- [x] `pod "RoutingKit"`
-- [x] `pod "Vapor"` (`CVaporBcrypt`, `CVaporURLParser`)
-- [x] `pod "WebSocketKit"`
+- `pod "AsyncKit"`
+- `pod "ConsoleKit"`
+- `pod "JWTKit"` (`CJWTKitBoringSSL`)
+- `pod "MultipartKit"`
+- `pod "RoutingKit"`
+- `pod "Vapor"` (`CVaporBcrypt`, `CVaporURLParser`)
+- `pod "WebSocketKit"`
 
 ## Kitura
 
-- [x] `pod "BlueSocket"`, `import Socket`
-- [x] `pod "BlueSSLService"`, `import SSLService`
-- [x] `pod "KituraNIO"`, `import KituraNet`
-- [x] `pod "Kitura"`
+- `pod "BlueSocket"`, `import Socket`
+- `pod "BlueSSLService"`, `import SSLService`
+- `pod "KituraNIO"`, `import KituraNet`
+- `pod "Kitura"`
+
+## Nuke
+
+- `pod "Nuke"`
+- `pod "NukeUI"`
+- `pod "NukeExtensions"`
+
+Nuke is also distributed as precompiled binary frameworks:
+
+- `pod "Nuke.xcframework"` ( `Nuke`, `NukeUI`, `NukeExtensions`)
+
+## Pulse
+
+- `pod "Pulse"`
+- `pod "PulseUI"`
+- `pod "PulseLogHandler"`
+
+Pulse is also distributed as precompiled binary frameworks:
+
+- `pod "Pulse.xcframework"` (`Pulse`, `PulseUI`)
+
+For iOS 13, macOS 11, tvOS 13, and watchOS 7, use Pulse 2:
+
+- `pod "Pulse", "~> 2.0"`
+- `pod "PulseUI", "~> 2.0"`
+
