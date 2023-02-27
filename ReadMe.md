@@ -20,13 +20,15 @@ Test cases are included as test specs.
 - `pod "Metrics"` (`CoreMetrics`, `MetricsTestKit`)
 - `pod "MQTTNIO"`
 - `pod "NIO"` (`NIOCore`, `NIOEmbedded`, `NIOPOSIX`, `NIOHTTP1`, `NIOTLS`, `NIOWebSocket`)
+- `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
 - `pod "NIOHTTP2"` (`NIOHPACK`)
 - `pod "NIOSSH"`
 - `pod "NIOSSL"` (`CNIOBoringSSL`)
-- `pod "NIOExtras"` (`NIOHTTPCompression`, `NIOSOCKS`)
 - `pod "NIOTransportServices"`
 - `pod "Numerics"` (`RealModule`, `ComplexModule`)
 - `pod "RangeSet"`, `import SE0270_RangeSet`
+- `pod "RedisStack"` (`RedisTypes`)
+- `pod "ServiceDiscovery"`
 - `pod "StructuredFieldValues"` (`RawStructuredFieldValues`)
 - `pod "SwiftProtobuf"`
 - `pod "SwiftSyntax"` (`SwiftSyntaxBuilder`, `SwiftSyntaxParser`)
@@ -39,7 +41,10 @@ Test cases are included as test specs.
 - `pod "ConsoleKit"`
 - `pod "JWTKit"` (`CJWTKitBoringSSL`)
 - `pod "MultipartKit"`
+- `pod "MySQLKit"`
+- `pod "Redis"`
 - `pod "RoutingKit"`
+- `pod "SQLKit"`
 - `pod "Vapor"` (`CVaporBcrypt`, `CVaporURLParser`)
 - `pod "WebSocketKit"`
 
@@ -47,31 +52,37 @@ Test cases are included as test specs.
 
 - `pod "BlueSocket"`, `import Socket`
 - `pod "BlueSSLService"`, `import SSLService`
-- `pod "KituraNIO"`, `import KituraNet`
 - `pod "Kitura"`
+- `pod "KituraNIO"`, `import KituraNet`
 
 ## Nuke
 
 - `pod "Nuke"`
-- `pod "NukeUI"`
 - `pod "NukeExtensions"`
+- `pod "NukeUI"`
 
 Nuke is also distributed as precompiled binary frameworks:
 
-- `pod "Nuke.xcframework"` ( `Nuke`, `NukeUI`, `NukeExtensions`)
+- `pod "Nuke.xcframework"`
+  - `import Nuke`
+  - `import NukeUI`
+  - `import NukeExtensions`
+
 
 ## Pulse
 
 - `pod "Pulse"`
-- `pod "PulseUI"`
 - `pod "PulseLogHandler"`
+- `pod "PulseUI"`
 
 Pulse is also distributed as precompiled binary frameworks:
 
-- `pod "Pulse.xcframework"` (`Pulse`, `PulseUI`)
+- `pod "Pulse.xcframework"`
+  - `import Pulse`
+  - `import PulseUI`
+
 
 For iOS 13, macOS 11, tvOS 13, and watchOS 7, use Pulse 2:
 
 - `pod "Pulse", "~> 2.0"`
 - `pod "PulseUI", "~> 2.0"`
-
