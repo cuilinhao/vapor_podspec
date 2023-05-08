@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency "AsyncHTTPClient", "~> 1.10"
   spec.dependency "AsyncKit", "~> 1.0"
-  spec.dependency "Backtrace", "~> 1.1"
+  spec.dependency "Backtrace", "~> 1.3.3"
   spec.dependency "ConsoleKit", "~> 4.0"
   spec.dependency "Logging", "~> 1.0"
   spec.dependency "Metrics", "~> 2.0"
